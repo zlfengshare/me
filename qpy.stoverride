@@ -3,7 +3,7 @@ desc: 趣配音
 
 http:
   mitm:
-    - "dayone.app"
+    - "apis40.qupeiyin.com"
   script:
     - match: ^https?:\/\/apis40\.qupeiyin\.com\/member\/index
       name: qpy
