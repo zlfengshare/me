@@ -1,0 +1,17 @@
+name: pigment
+desc: pigment
+
+http:
+  mitm:
+    - "api.revenuecat.com"
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers(.+)
+      name: pigment
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  pigment:
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/pigment.js
+    interval: 86400
