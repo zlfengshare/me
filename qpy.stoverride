@@ -13,5 +13,5 @@ http:
       
 script-providers:
   qpy:
-    url:  https://raw.githubusercontent.com/zlfengshare/me/main/qpy.js
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/qpy.js
     interval: 86400
