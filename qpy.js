@@ -1,7 +1,7 @@
 /******************************
 qpy.js
 
-^https?:\/\/apis40\.qupeiyin\.com\/member\/index url script-response-body qpy.js
+^https?:\/\/apis40\.qupeiyin\.com\/member\/index url script-response-body https://raw.githubusercontent.com/zlfengshare/me/main/qpy.js
 
 [mitm] 
 
