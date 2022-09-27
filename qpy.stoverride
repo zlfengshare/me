@@ -1,5 +1,5 @@
-name: 趣配音
-desc: 趣配音
+name: qpy
+desc: qpy
 
 http:
   mitm:
