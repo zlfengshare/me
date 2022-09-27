@@ -1,5 +1,5 @@
-name: qpy
-desc: qpy
+name: 趣配音
+desc: 趣配音
 
 http:
   mitm:
@@ -12,6 +12,6 @@ http:
       timeout: 10
       
 script-providers:
-  qpy:
+  camscanner:
     url: https://raw.githubusercontent.com/zlfengshare/me/main/qpy.js
     interval: 86400
