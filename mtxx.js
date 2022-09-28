@@ -1,11 +1,5 @@
 /******************************
-脚本功能：美图秀秀+解锁VIP
-软件版本：v9.6.20
-脚本作者：彭于晏
-更新时间：2022-9-1
-问题反馈：QQ+89996462
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-*******************************
+
 [rewrite_local]
 ^https:\/\/api\.xiuxiu\.meitu\.com\/v1 url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
 [mitm] 
