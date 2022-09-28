@@ -1,13 +1,4 @@
-/******************************
-xrk.js
 
-^https?:\/\/api\.v1\.esread\.com url script-response-body xrk.js
-
-[mitm] 
-
-hostname = api.v1.esread.com
-
-******************************/
 
 var body = $response.body
 			.replace(/vipStatus\" : .*?,/g, 'vipStatus" : 1,')
