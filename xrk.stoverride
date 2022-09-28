@@ -1,0 +1,17 @@
+name: xrk
+desc: xrk
+
+http:
+  mitm:
+    - "api.v1.esread.com"
+  script:
+    - match: ^https?:\/\/api\.v1\.esread\.com
+      name: xrk
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  xrk:
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/xrk.js
+    interval: 86400
