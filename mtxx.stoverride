@@ -1,0 +1,17 @@
+name: mtxx
+desc: mtxx
+
+http:
+  mitm:
+    - "api.xiuxiu.meitu.com"
+  script:
+    - match: ^https:\/\/api\.xiuxiu\.meitu\.com\/v1
+      name: mtxx
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  mtxx:
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/mtxx.js
+    interval: 86400
