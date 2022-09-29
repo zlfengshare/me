@@ -1,0 +1,17 @@
+name: me_dayone
+desc: me_dayone
+
+http:
+  mitm:
+    - "dayone.app"
+  script:
+    - match: ^https:\/\/dayone\.app\/api\/users
+      name: dayone
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  dayone:
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/me_dayone.js
+    interval: 86400
