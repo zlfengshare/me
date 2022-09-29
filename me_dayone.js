@@ -160,7 +160,7 @@ $done({body: JSON.stringify(obj)});
 
 var body = $response.body
 	
-  .replace(/limit\" :1,/g, 'limit\": 30,');
+  .replace(/limit\": 1,/g, 'limit\": 30,');
 			
       
 $done({ body });
