@@ -5,7 +5,7 @@ http:
   mitm:
     - "apis40.qupeiyin.com"
   script:
-    - match: ^https?:\/\/apis40\.qupeiyin\.com
+    - match: ^https?:\/\/apis40\.qupeiyin\.com\/member\/index
       name: qpy
       type: response
       require-body: true
