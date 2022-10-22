@@ -13,5 +13,5 @@ http:
       
 script-providers:
   Notability:
-    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/Notability.js
     interval: 86400
