@@ -1,5 +1,5 @@
-name: day_tnt
-desc: day_tnt
+name: dayone_ts
+desc: dayone_ts
 
 http:
   mitm:
@@ -13,5 +13,4 @@ http:
       
 script-providers:
   Dayone:
-    url: https://raw.githubusercontent.com/zlfengshare/me/main/day_ts.js
-    interval: 86400
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/dayone_ts.js
