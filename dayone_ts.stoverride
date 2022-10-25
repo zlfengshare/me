@@ -6,12 +6,12 @@ http:
     - "dayone.app"
   script:
     - match: ^https?:\/\/dayone\.app\/api\/v2\/users 
-      name: dayone
+      name: dayone_ts
       type: response
       require-body: true
       timeout: 10
       
 script-providers:
-  Dayone:
+  dayone_ts:
     url: https://raw.githubusercontent.com/zlfengshare/me/main/dayone_ts.js
     interval: 86400
