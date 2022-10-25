@@ -1,0 +1,41 @@
+name: Alex0510合集
+desc: Alex0510合集2022
+
+http:
+  mitm:
+    - "api.revenuecat.com"
+    - "buy.itunes.apple.com"
+    - "*.googleapis.com"
+  script:
+# revenuecat 
+    - match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$
+    - name: revenuecat
+      type: response
+      require-body: true
+      timeout: 10
+# verifyReceipt 
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+    - name: verifyReceipt
+      type: response
+      require-body: true
+      timeout: 10
+# fileball 
+    - match: ^https://firebaseremoteconfig.googleapis.com/v1/projects/filebox-ac299/namespaces/firebase:fetch\?key=.*
+    - name: fileball
+      type: response
+      require-body: true
+      timeout: 10
+            
+script-providers:
+# revenuecat 
+  revenuecat:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/revenuecat.js
+    interval: 86400
+# verifyReceipt 
+  verifyReceipt:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/verifyReceipt.js
+    interval: 86400
+# fileball 
+  fileball:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/fileball.js
+    interval: 86400
