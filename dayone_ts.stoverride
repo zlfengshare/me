@@ -5,7 +5,7 @@ http:
   mitm:
     - "dayone.app"
   script:
-    - match: ^https:\/\/dayone\.app\/api\/v2\/users 
+    - match:^https:\/\/dayone\.app\/api\/v2\/users 
       name: dayone
       type: response
       require-body: true
@@ -13,4 +13,4 @@ http:
       
 script-providers:
   Dayone:
-    url: https://raw.githubusercontent.com/zlfengshare/me/main/dayone_ts.js
+    url:https://raw.githubusercontent.com/zlfengshare/me/main/dayone_ts.js
