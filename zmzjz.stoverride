@@ -1,0 +1,17 @@
+name: zmzjz
+desc: 最美证件照
+
+http:
+  mitm:
+    - "fufei.fengyunsoft.cn"
+  script:
+    - match: ^https:\/\/fufei\.fengyunsoft\.cn\/api\/client\/info
+      name: zmzjz
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  zmzjz:
+    url: https://raw.githubusercontent.com/zlfengshare/me/main/zmzjz.js
+    interval: 86400
