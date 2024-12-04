@@ -1,9 +1,7 @@
 /*
 dayone日记高级版
-^https:\/\/dayone\.app\/api\/users url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/dayone.js
-本地：
 
-^https:\/\/dayone\.app\/api\/users url script-response-body dayone_tnt.js
+^https:\/\/dayone\.app\/api\/users url script-response-body https://raw.githubusercontent.com/zlfengshare/me/refs/heads/main/dayone_tnt.js
 
 hostname：dayone.app
 
